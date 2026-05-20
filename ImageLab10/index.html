@@ -5,16 +5,23 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -30" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 0 -5" radius="1.25" color="#50C878"></a-sphere>
+        <img id="sky1" src="minesky.jpg">
+        <img id="tex1" src="rainb.jpg">
+        <img id="tex3" src="pine.jpg">
+        <img id="tex4" src="turtle.jpg">
+        <img id="plane" src="waterplanee.jpg">
+
+      <a-box position="3 2.25 -8" rotation="0 45 0" color="#450"></a-box>
+      <a-sphere src=turtle.jpg position="0 0 -5" radius="1.25" color="#50C878"></a-sphere>
       <a-sphere position="0 0 -3.75" radius="0.5" color="#90EE90"></a-sphere>
       <a-sphere position="-1 0 -4" radius="0.25" color="#90EE90"></a-sphere>
       <a-sphere position="1 0 -4" radius="0.25" color="#90EE90"></a-sphere>
       <a-sphere position="-0.2 0.25 -3.45" radius="0.1" color="#000000"></a-sphere>
       <a-sphere position="0.2 0.25 -3.45" radius="0.1" color="#000000"></a-sphere>
-      <a-cylinder position="1 0.75 -30" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-sphere src=rainb.jpg position="-4 1 -10" radius="1.25" color="#50C878"></a-sphere>
+      <a-cylinder src=pine.jpg position="3 1 -8" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane src=waterplanee.jpg position="0 0 -4" rotation="-90 0 0" width="100" height="100" color="#7BC8A4"></a-plane>
+      <a-sky src=mineskyturt.jpg color="#ECECEC"></a-sky>
     </a-scene>
   </body>
 </html>
