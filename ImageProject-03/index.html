@@ -6,16 +6,26 @@
   <body>
     <a-scene>
     
-      <a-assets>
+<a-assets>
   <a-asset-item id="giraffe" src="assets/ZIRAFAH.obj"></a-asset-item>
 </a-assets>
 
-<a-obj-model 
-  src="#giraffe" position="-5 1.97 -10" rotation="90 -10 0" scale="0.03 0.03 0.03">
-</a-obj-model>
+<a-obj-model src="#giraffe" position="-5 1.97 -10" rotation="90 -10 0" scale="0.03 0.03 0.03"></a-obj-model>
 
+<a-assets>
+  <a-asset-item id="fence" src="assets/fences.obj"></a-asset-item>
+  <a-asset-item id="fence-mtl" src="assets/fences.mtl"></a-asset-item>
+</a-assets>
 
-      <a-box position="10 0.5 -30" rotation="0 45 0" color="#4CC3D9"></a-box>
+<a-obj-model src="#fence" mtl="#fence-mtl" position="-100 1 -5" rotation="90 90 0" scale="0 50 1"></a-obj-model>
+
+<a-assets>
+  <a-asset-item id="ele" src="assets/Elephant Scan.obj"></a-asset-item>
+</a-assets>
+
+<a-obj-model src="#ele" position="5 0 -10" rotation="270 10 0" scale="0.03 0.03 0.03"></a-obj-model>
+
+      <!-- <a-box position="10 0.5 -30" rotation="0 45 0" color="#4CC3D9"></a-box> -->
       <!-- <a-sphere position="0 1.25 -50" radius="1.25" color="#EF2D5E"></a-sphere> -->
       <!-- <a-cylinder position="1 0.75 -30" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
       <a-plane src="zooground.jpg" position="0 0 -4" rotation="-90 0 0" width="400" height="400" color="#7BC8A4"></a-plane>
